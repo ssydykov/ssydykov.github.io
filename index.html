@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<title>GameDev Academy - Академия разработок видеоигр</title>
+	 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	 
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+ 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+      </script>
+ 
+	<link rel="shortcut icon" href="images/favicon.png">
+	<script src="js/pace.js"></script>
+ 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+		<div class="preloader"></div>
+	
+		<main id="top" class="masthead" role="main">
+			<div class="container">
+	 
+				<div class="row">
+					<div class="col-md-5 col-sm-12 col-md-inset-7 subscribe">
+
+	                    <div class="panel panel-default" id="form">
+	                        <div class="panel-heading">                                
+	                            <div class="row-fluid user-row">
+	                                <img src="images/gda.png" class="img-responsive" alt="Conxole Admin" width="200px" />
+	                            	<h5>
+	                            		Создай и запусти игру своей мечты за 8 недель!
+	                            	</h5>
+	                            </div>
+	                        </div>
+	                        <div class="panel-body">
+	                            <form accept-charset="UTF-8" role="form" class="form-signin">
+	                                <fieldset>
+	                                    <label class="panel-login">
+	                                        <div class="login_result"></div>
+	                                    </label>
+	                                    <input class="form-control" placeholder="Как Вас зовут?" id="username" type="text">
+	                                    <input class="form-control" placeholder="Ваш номер телефона" id="number" type="text">
+	                                    <br></br>
+	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Хочу создать свою игру! »">
+	                                </fieldset>
+	                            </form>
+	                        </div>
+	                    </div>
+
+						<span id="result" class="alertMsg"></span> </div>
+					</div>
+	 
+					<a href="index.html#explore" class="scrollto">
+						<p>УЗНАТЬ БОЛЬШЕ</p>
+						<p class="scrollto--arrow">
+							<img src="images/scroll_down.png" alt="scroll down arrow">
+						</p>
+					</a>
+				</div>
+			</div>
+		</main>
+ 
+		<div class="section-title wow fadeIn" id="explore">
+			<h4>
+  		  		<img src="images/logo_small.png" class="img-responsive" alt="Conxole Admin" width="250px" />
+  		  		<strong>GameDev Academy</strong> - академия разработок видеоигр. 
+  		  		<br/>
+				Сейчас открыт набор в группы на курсы анимации, концепт-арта и программирования
+			</h4>
+			<br/><br/>
+		</div>
+		
+		<!-- Courses -->
+		<section class="row features">
+
+			<div class="col-md-1"></div>
+			<div class="col-sm-6 col-md-10">
+
+				<div class="row">
+
+					<div class="col-md-4">
+		              <div class="card mb-4 shadow-sm">
+		                <img class="card-img-top" src="images/animation.jpg" data-holder-rendered="true">
+		                <div class="card-body">
+
+		                	<h5>
+		                		Анимация
+		                	</h5>
+			                <h6 style="margin-left: 16px;">
+			                	- Обучение в программах: Adobe photoshop, Adobe animate. <br/>
+			                	- Раскадровка, аниматика, композиция кадров,
+			                	правило трех, расстановка камеры.
+			                </h6>
+		                  
+		                  	<br/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                	<!-- <small class="text-muted">8 недель</small> -->
+		                </div>
+		              </div>
+		            </div>
+					<div class="col-md-4">
+		              <div class="card mb-4 shadow-sm">
+		                <img class="card-img-top" src="images/concept.jpg" data-holder-rendered="true">
+		                <div class="card-body">
+
+		                	<h5>
+		                		Концепт-арт
+		                	</h5>
+			                <h6 style="margin-left: 16px;">
+			                	- Обучение в программах: Adobe Photoshop, Paint Tool Sai. <br/>
+								- Cоздание персонажа и иллюстраций, поиск стилистики, сеттинга, цветовых решений.
+			                </h6>
+		                  
+		                  	<br/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                	<!-- <small class="text-muted">8 недель</small> -->
+		                </div>
+		              </div>
+		            </div>
+					<div class="col-md-4">
+		              <div class="card mb-4 shadow-sm">
+		                <img class="card-img-top" src="images/code.jpg" data-holder-rendered="true">
+		                <div class="card-body">
+
+		                	<h5>
+		                		Программирование Unity3D
+		                	</h5>
+			                <h6 style="margin-left: 16px;">
+			                	- Обучение в программах: Unity 3D, Visual Studio. <br/>
+								- Программирование на языке C#, создание UI/UX, сборка собственных проектов.
+			                </h6>
+		                  
+		                  	<br/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                	<!-- <small class="text-muted">8 недель</small> -->
+		                </div>
+		              </div>
+		            </div>
+
+				</div>
+
+			</div>
+ 
+		</section>
+		<br/><br/>
+
+		<section>
+			
+			<div class="number" role="main" style="width: 100%; padding: 0;">
+				<div class="container wow fadeIn" data-wow-duration="1s">
+				    <div class="row" style="margin: 60px 0; text-align: center;">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<p style="color: #fcfcfc; font-weight: 700; font-size: 36px; ">ИНТЕРЕСНЫЕ ФАКТЫ<span style="font-size: 16px;"><br/>Посмотрим некоторые цифры о нас</span></p>
+						</div>
+					</div>
+					<div class="row" style="margin: 60px 0; text-align: center;">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="text-align: center; margin-top: 2px; text-shadow: 1px 1px #000;">
+								<a class="fig">
+									<span  class="counter_num">10</span><span>k +</span>
+									<span style="font-size: 14px; font-family: 'Karla', san-serif;"><br/>СДЕЛАННЫХ ЗАГРУЗОК</span>
+								</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="text-align: center; margin-top: 2px; text-shadow: 1px 1px #000;">
+								<a class="fig">
+									<span  class="counter_num">500</span><span>k +</span>
+									<span style="font-size: 14px; font-family: 'Karla', san-serif;"><br/>ВЫПОЛНЕННЫХ СЕССИЙ</span>
+								</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="text-align: center; margin-top: 2px; text-shadow: 1px 1px #000;">
+								<a class="fig">
+									<span  class="counter_num">300</span> <span>+</span>
+									<span style="font-size: 14px; font-family: 'Karla', san-serif;"><br/>ОТЗЫВОВ</span>
+								</a>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="text-align: center; margin-top: 2px; text-shadow: 1px 1px #000;">
+								<a class="fig">
+									<span  class="counter_num">10</span> <span>+</span>
+									<span style="font-size: 14px; font-family: 'Karla', san-serif;"><br/>НАГРАЖДЕНИЙ И ПРЕМИЙ</span>
+								</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Portfolio  -->
+		<div class="container">
+
+			<div class="section-title wow fadeIn">
+				<h2>Наше портфолио</h2>
+				<h4>Не верьте нам на слово. Смотрите на наши работы </h4>
+			</div>
+
+			<br/>
+			
+			<section class="row breath">
+
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+	                        <!-- TITLE -->
+	                        <div class="inner_about_title" align="center">
+                        		<img src="images/animja_logo.png" alt="animja" width="150px">
+	                        	<h4 align="center">
+	                        		Animja
+	                        	</h4>
+	                        	<h5 align="center">
+	                        		аркадная 2Д игра в японской стилистике
+	                        	</h5>
+	                        </div>
+	                        <br/>
+	                        <div class="inner_about_desc">
+
+	                            <div class="download-btn" align="center">
+	                            <!-- BUTTON -->
+	                                <a href="https://itunes.apple.com/kz/app/animja/id1339512969?mt=8" style="margin-right: 16px;">
+	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon"></a>
+	                                <a href="https://play.google.com/store/apps/details?id=com.strixit.ninjashuriken&hl=en_US">
+	                                    <img height="48px" src="images/google.png" alt="google_icon"></a>
+	                            </div>
+
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6">
+	                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+	                        <!-- PHONE -->
+	                    		<br/><br/>
+	                            <img src="images/animja_screen.png" width="400px">
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <br/><br/><br/><br/><br/><br/>
+
+	                <div class="row" align="center">
+	                    <div class="col-md-6">
+	                        <div class="about_phone wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+	                        <!-- PHONE -->
+	                            <img src="images/pets_screen.png" width="400px">
+	                    		<br/><br/>
+	                        </div>
+	                    </div>
+	                    <div class="col-md-6  wow fadeInRight" data-wow-duration="1s" data-wow-delay=".5s">
+	                        <!-- TITLE -->
+	                        <div class="inner_about_title" align="center">
+                        		<img src="images/pets_logo.png" alt="animja" width="150px">
+	                        	<h4 align="center">
+	                        		Pets - Ui Zhanuarlary
+	                        	</h4>
+	                        	<h5 align="center">
+	                        		детский интерактивный журнал
+	                        	</h5>
+	                        </div>
+	                        <br/>
+	                        <div class="inner_about_desc">
+
+	                            <div class="download-btn" align="center">
+	                            <!-- BUTTON -->
+	                                <a href="https://itunes.apple.com/kz/app/pets-ui-zhanuarlary/id1437300686?mt=8" style="margin-right: 16px;">
+	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon"></a>
+	                                <a href="https://play.google.com/store/apps/details?id=kz.fadein.pets&hl=bg">
+	                                    <img height="48px" src="images/google.png" alt="google_icon"></a>
+	                            </div>
+
+	                        </div>
+	                    </div>
+	                </div>
+        		</div>
+
+			</section>
+
+		</div>
+		<br/>
+		<hr/>
+		<!-- Prising list	   -->
+		<div class="container">
+ 
+			<div class="section-title wow fadeIn">
+				<h2>Тарифы</h2>
+				<h4>У нас самые оптимальные цены на рынке</h4>
+			</div>
+			<section class="row">
+			
+		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		                <div class="db-wrapper">
+		                    <div class="db-pricing-eleven db-bk-color-one">
+		                        <div class="price">
+		                            <sup>&#8376</sup>30k
+		                                <small>цена за месяц</small>
+		                        </div>
+		                        <div class="type-red">
+	                            	СТУДЕНТ <br/> 
+	                            	ПАКЕТ
+		                        </div>
+		                        <ul style="font-size: 17px;">
+
+		                            <li><i class="fa fa-paint-brush"></i>Групповые занятия</li>
+		                            <li><i class="fa fa-time"></i></li>
+			                        <li></li>
+			                        <li>x</li>
+		                        </ul>
+		                        <div class="pricing-footer">
+
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ЗАКАЗАТЬ</a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		                <div class="cnrflash">
+		                    <div class="cnrflash-inner">
+		                        <span class="cnrflash-label" style="font-size: 12px;">
+		                        	ЛУЧШИЙ <br> ВЫБОР!
+	                            </span>
+		                    </div>
+		                </div>
+		                <div class="db-wrapper">
+			                <div class="db-pricing-eleven db-bk-color-two popular">
+			                    <div class="price">
+			                        <sup>&#8376</sup>42k
+	                                <small>от</small>
+			                    </div>
+			                    <div class="type-blue">
+			                        СТАНДАРТ <br/> 
+			                        ПАКЕТ
+			                    </div>
+		                        <ul style="font-size: 17px;">
+
+			                        <li><i class="fa fa-paint-brush"></i>Уникальный дизайн</li>
+			                        <li><i class="fa fa-apple"></i> / <i class="fa fa-android"></i>Кроссплатформенность (iOS и Android)</li>
+			                        <li><i class="fa fa-globe"></i>Сайт визитка (Landing Page)</li>
+			                        <li>x</li>
+			                    </ul>
+			                    <div class="pricing-footer">
+
+			                            <a href="#" class="wow bounceIn btn btn-warning btn-lg" style="padding-right: 72px; padding-left: 72px;">ЗАКАЗАТЬ</a>
+			                    </div>
+			                </div>
+	                    </div>
+		            </div>
+		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		                <div class="db-wrapper">
+			                <div class="db-pricing-eleven db-bk-color-three">
+			                    <div class="price">
+			                        <sup>&#8376</sup>52k
+			                                <small>от</small>
+			                    </div>
+			                    <div class="type-green">
+			                        ИНДИВИДУАЛЬНЫЙ <br/>
+			                        ПАКЕТ
+			                    </div>
+		                        <ul style="font-size: 17px;">
+
+			                        <li><i class="fa fa-paint-brush"></i>Уникальный дизайн</li>
+			                        <li><i class="fa fa-apple"></i> / <i class="fa fa-android"></i>Кроссплатформенность (iOS и Android)</li>
+			                        <li><i class="fa fa-globe"></i>Сайт визитка (Landing Page)</li>
+		                            <li><i class="fa fa-database"></i>Разработка серверной части (Backend)</li>
+			                    </ul>
+			                    <div class="pricing-footer">
+
+			                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ЗАКАЗАТЬ</a>
+			                    </div>
+			                </div>
+		                </div>
+		            </div>
+
+			</section><!-- /section planpricing -->
+ 
+		</div>
+
+		<br/>
+		<hr/>
+
+		<!-- Partners section  -->
+		<div class="section-title wow fadeIn">
+			<h2>Наши партнеры</h2>
+			<h4>Мы работаем со всеми!</h4>
+		</div>
+	
+		<section class="row clientlogo breath wow fadeIn">
+			<div class="col-md-12 text-center"> 
+				<img src="images/partners.png" alt="client-logos">
+			</div>
+		</section><! --/section -->
+ 
+		<br><br>
+
+	</div><! --/container -->
+ 
+	    <! -- ******************** FOOTER ******************** -->	  
+		<main class="footercta" role="main">
+			<div class="container">
+				<h1 style="text-shadow: 1px 1px #000;" class="wow bounceIn">
+					<strong>Остались вопросы?</strong>
+					Будем рады ответить!
+				</h1>
+ 
+			    <div class="row wow fadeIn">
+			        <div class="col-md-8">
+			            <div class="well well-sm">
+			                <form>
+			                <div class="row">
+			                    <div class="col-md-6">
+			                        <div class="form-group">
+			                            <label for="name" style="color: #292929;">
+			                                Как Вас зовут? </label>
+			                            <div class="input-group">
+			                                <span class="input-group-addon"><span class="fa fa-user"></span>
+			                                </span>
+			                                <input type="text" class="form-control" id="name" placeholder="Введите имя" required="required" /></div>
+			                        </div>
+			                        <div class="form-group">
+			                            <label for="email" style="color: #292929;">
+			                                E-mail адрес </label>
+			                            <div class="input-group">
+			                                <span class="input-group-addon"><span class="fa fa-envelope"></span>
+			                                </span>
+			                                <input type="email" class="form-control" id="email" placeholder="Введите e-mail" required="required" /></div>
+			                        </div>
+			                        <div class="form-group">
+			                            <label for="tel" style="color: #292929;">
+			                                Телефон </label>
+			                            <div class="input-group">
+			                                <span class="input-group-addon"><span class="fa fa-phone"></span>
+			                                </span>
+			                                <input type="tel" class="form-control" id="tel" placeholder="Введите номер телефона" required="required" /></div>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-6">
+			                        <div class="form-group">
+			                            <label for="name" style="color: #292929;">
+			                                Сообщение</label>
+			                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+			                                placeholder="Сообщение"></textarea>
+			                        </div>
+			                    </div>
+			                    <div class="col-md-12">
+			                        <input class="btn btn-lg btn-success btn-block" type="submit" id="login" value="Отправить »">
+			                    </div>
+			                </div>
+			                </form>
+			            </div>
+			        </div>
+			        <div class="col-md-4">
+			            <form>
+			            <legend style="color: white; text-shadow: 1px 1px #000;"><span class="fa fa-globe"></span> Наши контакты:</legend>
+			            <address style="text-shadow: 1px 1px #000">
+	                        <strong>Fade-in Games</strong><br>
+	                        Розыбакиева 227, 050060<br>
+	                        Алматы, Казахстан<br>
+	                        Тел: +7 (708) 259 1022
+			            </address>
+	                    <address style="text-shadow: 1px 1px #000">
+	                        <strong>Fade-in team</strong><br>
+	                        <a href="mailto:#" style="font-weight: bold;text-decoration: underline; color: #4A90E2;">fadein.games@gmail.com</a>
+	                    </address>
+                        <a href="http://vk.com/f4d3in" style="margin-right: 12px;">
+                        	<img src="images/vk.png" width="25px">
+                        </a>
+                    	<a href="https://www.instagram.com/f4d3.in/" style="margin-right: 12px;">
+                    		<img src="images/instagram.png" width="25px">
+                    	</a>
+                    	<a href="https://t.me/F4d3in" style="margin-right: 12px;">
+                    		<img src="images/telegram.png" width="25px">
+                    	</a>
+                    	<a href="https://facebook.com/f4d3.in/">
+                    		<img src="images/facebook.png" width="25px">
+                    	</a>
+			            </form>
+			        </div>
+			    </div>
+			</div><! --/container -->
+		</main><! --/main -->
+ 
+		<div class="container">
+			<section class="row breath">
+				<div class="col-md-12 footerlinks">
+					<p>&copy; 2018 Fade-in Games. All Rights Reserved</p>
+				</div>
+			</section><! --/section -->
+		</div><! --/container -->
+ 
+ 
+ 
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/nicescroll.js"></script>
+ 
+ 
+<script>
+
+
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+		 var $anchor = $(this);
+		 $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
+        
+
+</script>
+ 
+</body>
+</html>
