@@ -8,15 +8,16 @@ $(document).ready(function () {
         var message = $(formNm).find(".form-message");
         var formTitle = $(formNm).find(".form-title");
 
-        var token = "309839318:AAEkELQeIhTNnAJHn_gX1gzxB-J_w2rPC4Q";
-        var chat_id = "-275778983";
+        var token = "530206525:AAGNJ7WY58k_D5QhJlrn4wcdLHEuvASXfZs";
+        var chat_id = "-329126431";
 
-        var test = $('#name').val();
-        var name = $('#name').val();
+        var test = $('#username').val();
+        var name = $('#username').val();
         var phone = $('#phone').val();
+        var email = $('#email').val();
         var message = $('#message').val();
 
-        var postMessage = "Name: " + name + "%0APhone: " + phone + "%0AMessage: " + message;
+        var postMessage = "Name: " + name + "%0APhone: " + phone + "%0AEmail: " + email + "%0AMessage: " + message;
 
         // alert(postMessage);
 
@@ -26,7 +27,7 @@ $(document).ready(function () {
             data: formNm.serialize(),
             success: function (data) {
               // Вывод сообщения об успешной отправке
-              alert("Success!");
+              alert("Спасибо, Ваша заявка принята! Мы свяжемся с Вами в ближайшее время.");
               message.html(data);
               formTitle.css("display","none");
               setTimeout(function(){
