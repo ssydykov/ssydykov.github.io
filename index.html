@@ -21,6 +21,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   	<script src="telegramform.js"></script>
   	<script src="js/pace.js"></script>
+  	<script src="js/smoothscroll.js"></script>
 
 </head>
 
@@ -33,9 +34,33 @@
 	            <div class="bounce3"></div>
 	        </div>
 	    </div>
-	
-		<main id="top" class="masthead" role="main">
-			<div class="container">
+
+		<main id="HOME" class="masthead" role="main">
+
+            <!-- <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-expand-md" role="navigation">
+                <div class="container">
+                	<div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>                        
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#HOME">ГЛАВНАЯ </a> </li>
+                            <li><a href="#COURSES">КУРСЫ </a> </li>
+                            <li><a href="#PORTFOLIO">ПОРТФОЛИО </a></li>
+                            <li><a href="#CONTACT">КОНТАКТЫ </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> -->
+			<div class="container home-container">
 	 
 				<div class="row">
 					<div class="col-md-5 col-sm-12 col-md-inset-7 subscribe">
@@ -54,9 +79,9 @@
 	                                <fieldset>
 	                                    <input class="form-control" placeholder="Как Вас зовут?" id="username" type="text">
 	                                    <input class="form-control" placeholder="Номер телефона" id="phone" type="text">
-	                                    <input class="form-control" placeholder="Email" id="email" type="text">
+	                                    <input class="form-control" placeholder="Возраст" id="age" type="text">
 	                                    <br>
-	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Хочу создать свою игру! »">
+	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Бесплатная консультация »">
 	                                </fieldset>
 	                            </form>
 	                        </div>
@@ -75,7 +100,7 @@
 			</div>
 		</main>
  
-		<div class="section-title wow fadeIn" id="explore">
+		<div class="section-title wow fadeIn" id="COURSES">
 			<h4>
   		  		<img src="images/logo_small.png" class="img-responsive" alt="Conxole Admin" width="250px" />
   		  		<strong>GameDev Academy</strong> - академия разработок видеоигр. 
@@ -109,8 +134,8 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Инфо" class="btn btn-info"/>
-		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
+		                  	<input onclick="location.href='animation.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
 		                </div>
 		              </div>
@@ -130,8 +155,8 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Инфо" class="btn btn-info"/>
-		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
+		                  	<input onclick="location.href='concept.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
 		                </div>
 		              </div>
@@ -151,8 +176,8 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Инфо" class="btn btn-info"/>
-		                  	<input type="button" value="Подать заявку" class="btn btn-success"/>
+		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
+		                  	<input onclick="location.href='code.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
 		                </div>
 		              </div>
@@ -215,7 +240,7 @@
 		</section>
 
 		<!-- Portfolio  -->
-		<div class="container">
+		<div class="container" id="PORTFOLIO">
 
 			<div class="section-title wow fadeIn">
 				<h2>Наше портфолио</h2>
@@ -244,10 +269,12 @@
 
 	                            <div class="download-btn" align="center">
 	                            <!-- BUTTON -->
-	                                <a href="https://itunes.apple.com/kz/app/animja/id1339512969?mt=8" style="margin-right: 16px;">
-	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon"></a>
+	                                <a href="https://itunes.apple.com/kz/app/animja/id1339512969?mt=8">
+	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon" style="margin: 4px;">
+	                                </a>
 	                                <a href="https://play.google.com/store/apps/details?id=com.strixit.ninjashuriken&hl=en_US">
-	                                    <img height="48px" src="images/google.png" alt="google_icon"></a>
+	                                    <img height="48px" src="images/google.png" alt="google_icon" style="margin: 4px;">
+	                                </a>
 	                            </div>
 
 	                        </div>
@@ -287,10 +314,12 @@
 
 	                            <div class="download-btn" align="center">
 	                            <!-- BUTTON -->
-	                                <a href="https://itunes.apple.com/kz/app/pets-ui-zhanuarlary/id1437300686?mt=8" style="margin-right: 16px;">
-	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon"></a>
+	                                <a href="https://itunes.apple.com/kz/app/pets-ui-zhanuarlary/id1437300686?mt=8">
+	                                    <img height="48px" src="images/appstore.png" alt="appstore_icon" style="margin: 4px;">
+	                                </a>
 	                                <a href="https://play.google.com/store/apps/details?id=kz.fadein.pets&hl=bg">
-	                                    <img height="48px" src="images/google.png" alt="google_icon"></a>
+	                                    <img height="48px" src="images/google.png" alt="google_icon" style="margin: 4px;">
+	                                </a>
 	                            </div>
 
 	                        </div>
@@ -302,41 +331,16 @@
 
 		</div>
 		<br/>
-		<!-- <hr/> -->
+		<hr/>
 		<!-- Prising list	   -->
-		<!-- <div class="container">
+		<div class="container">
  
 			<div class="section-title wow fadeIn">
 				<h2>Тарифы</h2>
-				<h4>У нас самые оптимальные цены на рынке</h4>
+				<h4>У нас самые оптимальные цены</h4>
 			</div>
 			<section class="row">
 			
-		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		                <div class="db-wrapper">
-		                    <div class="db-pricing-eleven db-bk-color-one">
-		                        <div class="price">
-		                            <sup>&#8376</sup>30k
-		                                <small>цена за месяц</small>
-		                        </div>
-		                        <div class="type-red">
-	                            	СТУДЕНТ <br/> 
-	                            	ПАКЕТ
-		                        </div>
-		                        <ul style="font-size: 17px;">
-
-		                            <li><i class="fa fa-paint-brush"></i>Групповые занятия</li>
-		                            <li><i class="fa fa-time"></i></li>
-			                        <li></li>
-			                        <li>x</li>
-		                        </ul>
-		                        <div class="pricing-footer">
-
-		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ЗАКАЗАТЬ</a>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
 		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 		                <div class="cnrflash">
 		                    <div class="cnrflash-inner">
@@ -346,26 +350,63 @@
 		                    </div>
 		                </div>
 		                <div class="db-wrapper">
-			                <div class="db-pricing-eleven db-bk-color-two popular">
+		                    <div class="db-pricing-eleven db-bk-color-one popular">
+		                        <div class="price">
+		                            <sup>&#8376</sup> 57600 <br/><br/>
+	                                <h5 style="color: #fff;">Успей до 14го января!</h5>
+		                        </div>
+		                        <div class="type-red">
+	                            	20% СКИДКА
+		                        </div>
+		                        <div class="price-content" style="margin-top: 32px;">
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px;">
+	                            		Длительность курса
+	                            	</h5>
+	                            	2 месяца 
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Продолжительность
+	                            	</h5>
+	                            	3 раза в неделю по 2 часа
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Расписание
+	                            	</h5>
+	                            	в будни утром или вечером
+		                        </div>
+		                        <div class="pricing-footer">
+
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ПОДАТЬ ЗАЯВКУ</a>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		                <div class="db-wrapper">
+			                <div class="db-pricing-eleven db-bk-color-two">
 			                    <div class="price">
-			                        <sup>&#8376</sup>42k
-	                                <small>от</small>
+		                            <sup>&#8376</sup> 61200 <br/><br/>
+	                                <h5 style="color: #fff;">до 21го января</h5>
 			                    </div>
 			                    <div class="type-blue">
-			                        СТАНДАРТ <br/> 
-			                        ПАКЕТ
+			                        15% СКИДКА
 			                    </div>
-		                        <ul style="font-size: 17px;">
+		                        <div class="price-content" style="margin-top: 32px;">
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px;">
+	                            		Длительность курса
+	                            	</h5>
+	                            	2 месяца 
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Продолжительность
+	                            	</h5>
+	                            	3 раза в неделю по 2 часа
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Расписание
+	                            	</h5>
+	                            	в будни утром или вечером
+		                        </div>
+		                        <div class="pricing-footer">
 
-			                        <li><i class="fa fa-paint-brush"></i>Уникальный дизайн</li>
-			                        <li><i class="fa fa-apple"></i> / <i class="fa fa-android"></i>Кроссплатформенность (iOS и Android)</li>
-			                        <li><i class="fa fa-globe"></i>Сайт визитка (Landing Page)</li>
-			                        <li>x</li>
-			                    </ul>
-			                    <div class="pricing-footer">
-
-			                            <a href="#" class="wow bounceIn btn btn-warning btn-lg" style="padding-right: 72px; padding-left: 72px;">ЗАКАЗАТЬ</a>
-			                    </div>
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ПОДАТЬ ЗАЯВКУ</a>
+		                        </div>
 			                </div>
 	                    </div>
 		            </div>
@@ -373,42 +414,50 @@
 		                <div class="db-wrapper">
 			                <div class="db-pricing-eleven db-bk-color-three">
 			                    <div class="price">
-			                        <sup>&#8376</sup>52k
-			                                <small>от</small>
+		                            <sup>&#8376</sup> 64800 <br/><br/>
+	                                <h5 style="color: #fff;">до 28го января</h5>
 			                    </div>
 			                    <div class="type-green">
-			                        ИНДИВИДУАЛЬНЫЙ <br/>
-			                        ПАКЕТ
+			                        10% СКИДКА
 			                    </div>
-		                        <ul style="font-size: 17px;">
+		                        <div class="price-content" style="margin-top: 32px;">
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px;">
+	                            		Длительность курса
+	                            	</h5>
+	                            	2 месяца 
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Продолжительность
+	                            	</h5>
+	                            	3 раза в неделю по 2 часа
+	                            	<h5 style="font-weight: bold; color: #fff; margin: 0px; margin-top: 16px;">
+	                            		Расписание
+	                            	</h5>
+	                            	в будни утром или вечером
+		                        </div>
+		                        <div class="pricing-footer">
 
-			                        <li><i class="fa fa-paint-brush"></i>Уникальный дизайн</li>
-			                        <li><i class="fa fa-apple"></i> / <i class="fa fa-android"></i>Кроссплатформенность (iOS и Android)</li>
-			                        <li><i class="fa fa-globe"></i>Сайт визитка (Landing Page)</li>
-		                            <li><i class="fa fa-database"></i>Разработка серверной части (Backend)</li>
-			                    </ul>
-			                    <div class="pricing-footer">
-
-			                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ЗАКАЗАТЬ</a>
-			                    </div>
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">
+		                            	ПОДАТЬ ЗАЯВКУ
+		                            </a>
+		                        </div>
 			                </div>
 		                </div>
 		            </div>
 
 			</section>
  
-		</div> -->
+		</div>
 
 		<br/>
 		<hr/>
 
 		<!-- Partners section  -->
 		<div class="section-title wow fadeIn">
-			<h2>Наши партнеры</h2>
-			<h4>Мы работаем со всеми!</h4>
+			<h2>Наши партнеры и клиенты</h2>
 		</div>
 	
 		<section class="row clientlogo breath wow fadeIn">
+		<br/>
 			<div class="col-md-12 text-center"> 
 				<img src="images/partners.png" alt="client-logos">
 			</div>
@@ -419,7 +468,7 @@
 	</div><! --/container -->
  
 	    <! -- ******************** FOOTER ******************** -->	  
-		<main class="footercta" role="main">
+		<main class="footercta" role="main" id="CONTACT">
 			<div class="container">
 				<h1 style="text-shadow: 1px 1px #000;" class="wow bounceIn">
 					<strong>Остались вопросы?</strong>
