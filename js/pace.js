@@ -6,6 +6,13 @@ $(window).bind("load", function() {
     $(".spn_hol").fadeOut(1000);
 });
 
+// Modal dialog
+function closeModal() {
+    $('#infoAnimation').modal('hide');
+    $('#infoConceptArt').modal('hide');
+    $('#infoScripting').modal('hide');
+}
+
 
 //MENU APPEAR AND HIDE
 $(document).ready(function() {

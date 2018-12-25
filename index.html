@@ -23,6 +23,15 @@
   	<script src="js/pace.js"></script>
   	<script src="js/smoothscroll.js"></script>
 
+  	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  	<script type="text/javascript">
+  		$('#myModal').on('shown.bs.modal', function () {
+		  $('#myInput').trigger('focus')
+		})
+  	</script>
+
 </head>
 
 <body>
@@ -123,20 +132,64 @@
 		                <img class="card-img-top" src="images/animation.jpg" data-holder-rendered="true">
 		                <div class="card-body">
 
-		                	<h5>
-		                		Анимация
-		                	</h5>
 			                <h6 style="margin-left: 16px; height: 100%;">
-			                	- Обучение в программах: Adobe photoshop, Adobe animate. <br/>
+			                	- Обучение в программах: Adobe Photoshop, Adobe Animate. <br/>
 			                	- Раскадровка, аниматика, композиция кадров,
 			                	правило трех, расстановка камеры.
 			                </h6>
 		                  
 		                  	<br/>
 
-		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
-		                  	<input onclick="location.href='animation.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoAnimation" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
+
+		                	<!-- Modal info -->
+							<div class="modal fade" id="infoAnimation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h4 class="modal-title" id="exampleModalLongTitle">	
+							        	Курс "Анимация"
+							        </h4>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body"><h6>
+							        Курс компьютерной 2D-анимации в программе поможет всем, кто мечтал создать свою собственную анимацию. 
+
+									Если вы мечтали создавать атмосферные сцены и миры, завораживающие зрителя, но не знали с чего начать, дверь для вас широко открыта! <br/><br/>
+
+									Курс строится на анимации готовых гейм иллюстраций, создания визуальных и атмосферных эффектов для готового игрового продукта. 
+
+									Тут есть все, что нужно для начала — знакомство с инструментами и их возможностями, погружение в принципы игровой анимации, постоянная практика и проекты, выполнение которых поможет вам наполнить портфолио. <br/><br/>
+
+									Курс посвящен основам компьютерной 2D анимации в программе Adobe Animate и Adobe Photoshop.  Для обучения подойдет любая версия этой программы. Кроме практических уроков, Вы так же сможете познакомиться с теоретическими основами анимационного производства и принципами анимации. <br/><br/><br/>
+
+									Вы научитесь различным приемам Флэш анимации и сможете создать свою собственную анимацию.
+									На этом курсе вы изучите: <br/><br/>
+
+									1. Теория: Что такое анимация. Практика: Виды анимации. Знакомство с Adobe Animate. <br/>
+									2. Теория: 12 принципов анимации. Практика: Скачущий мячик с отстающими элементами. <br/>
+									3. Теория: Кинопроизводство. Практика: Движение по траектории «Бабочка» <br/>
+									4. Теория: Разработка персонажа. Практика: Прыжок лягушки. <br/>
+									5. Теория: Композиция кинокадра. Практика: Походка человека. <br/>
+									6. Теория: Сценарий и Раскадровка. Практика: Ротоскопинг – добавление анимации в видео. <br/>
+									7. Теория: Липсинк. Практика: Липсинк персонажа – говорящий персонаж. <br/><br/>
+									+ Дополнительный урок по конвертированию видео и размещению в инстаграм.
+							      </h6></div>
+							      <div class="modal-footer">
+							      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+							        <button type="button" data-dismiss="modal" class="btn btn-primary">
+							        	Закрыть
+							        </button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+
 		                </div>
 		              </div>
 		            </div>
@@ -145,9 +198,6 @@
 		                <img class="card-img-top" src="images/concept.jpg" data-holder-rendered="true">
 		                <div class="card-body">
 
-		                	<h5>
-		                		Концепт-арт
-		                	</h5>
 			                <h6 style="margin-left: 16px; height: 100%;">
 			                	- Обучение в программах: Adobe Photoshop, Paint Tool Sai. <br/>
 								- Cоздание персонажа и иллюстраций, поиск стилистики, сеттинга, цветовых решений.
@@ -155,9 +205,48 @@
 		                  
 		                  	<br/>
 
-		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
-		                  	<input onclick="location.href='concept.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoConceptArt" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
+
+		                	<!-- Modal info -->
+							<div class="modal fade" id="infoConceptArt" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h4 class="modal-title" id="exampleModalLongTitle">	
+							        	Курс "Концепт-арт"
+							        </h4>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body"><h6>
+									В этом учебном периоде вы сосредоточитесь на создании собственных персонажей основываясь на придуманных вами сеттинге и истории. <br/><br/>
+
+									Студенты будут опираться на свои навыки рисования, анатомии и позирования, чтобы визуализировать героев и злодеев, создавать их с нуля, придумывать предыстории и способности. От выбора цветовой гаммы до составления листа с вариациями дизайна персонажей, студент узнает, каково это - быть концепт-художником и дизайнером персонажей для кино, комиксов и видеоигр. Так же, особое внимание будет уделено поиску гармонии между персонажами, существами и средой, в которой они обитают. <br/><br/>
+
+									Помимо всего этого, во время учебы студенты будут иметь возможность создать собственное портфолио. Вы также узнаете, как правильно представить свои работы, чтобы продемонстрировать умения и смело подавать заявки на будущую работу. <br/><br/><br/>
+
+									На этом курсе вы изучите: <br/><br/>
+
+									- Как создавать запоминающихся персонажей, их личность и бэкграунд (историю)<br/>
+									- Как передавать общие черты характера через цветовые палитры, а так же физические и внешние аспекты<br/>
+									- Разработка сеттинга и среды, чтобы вписать туда персонажа и воссоздать гармоничную связь между миром и его обитателями<br/>
+									- Создание различных вариаций , поиск решений, правильное использование референсов <br/>
+									- Отполируйте существующую идею и создавайте новые концептуальные работы для вашего профессионального портфолио<br/>
+									- Узнайте, как продвигать свое творчество в соцсетях, под руководством вашего наставника
+							      </h6></div>
+							      <div class="modal-footer">
+							      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+							        <button type="button" data-dismiss="modal" class="btn btn-primary">
+							        	Закрыть
+							        </button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 		                </div>
 		              </div>
 		            </div>
@@ -166,9 +255,6 @@
 		                <img class="card-img-top" src="images/code.jpg" data-holder-rendered="true">
 		                <div class="card-body">
 
-		                	<h5>
-		                		Программирование Unity3D
-		                	</h5>
 			                <h6 style="margin-left: 16px; height: 100%;">
 			                	- Обучение в программах: Unity 3D, Visual Studio. <br/>
 								- Программирование на языке C#, создание UI/UX, сборка собственных проектов.
@@ -176,12 +262,77 @@
 		                  
 		                  	<br/>
 
-		                  	<input onclick="location.href='animation.html'" type="button" value="Подать заявку" class="btn btn-success" style="margin: 4px;"/>
-		                  	<input onclick="location.href='code.html'" type="button" value="Инфо" class="btn btn-info" style="margin: 4px;" />
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+
+		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoScripting" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
+
+		                	<!-- Modal info -->
+							<div class="modal fade" id="infoScripting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							    <div class="modal-content">
+							      <div class="modal-header">
+							        <h4 class="modal-title" id="exampleModalLongTitle">	
+							        	Курс "Программирование в Unity3D"
+							        </h4>
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							          <span aria-hidden="true">&times;</span>
+							        </button>
+							      </div>
+							      <div class="modal-body"><h6>
+							      	- Введение. Этапы разработки игр. Основные жанры игр. Механики игр. Геймплей. <br/>
+									- Введение в интерфейс игрового движка Unity
+									Воссоздание основных механик на примере популярных игр:<br/>
+									1) Flappy bird - tap (1 неделя)<br/>
+									2) Subway surfer - swipe (2 неделя)<br/>
+									3) Puzzle game - GUI (интерфейс пользователя) (3 неделя)<br/>
+									4) Mario - управление игрока (wasd), переходы и контроль анимаций (4 неделя)<br/>
+									- Создание собственного проекта (2 недели). Описание проекта - идея, геймплей, механика, цель (game core loop)<br/>
+									- Build проекта на определенную платформу<br/>
+									- Подготовка презентации<br/>
+									- Защита<br/>
+									- Загрузка на Play Market или App store
+							      </h6></div>
+							      <div class="modal-footer">
+							      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+							        <button type="button" data-dismiss="modal" class="btn btn-primary">
+							        	Закрыть
+							        </button>
+							      </div>
+							    </div>
+							  </div>
+							</div>
 		                </div>
 		              </div>
 		            </div>
+
+
+                	<!-- Modal apply -->
+					<div class="modal fade" id="applyAnimation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">
+					        	Я готов создать свою игру!
+					        </h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      	...
+					      </div>
+					      <div class="modal-footer">
+					        <button type="submit" data-dismiss="modal" class="btn btn-success">
+					        	Отправить
+					        </button>
+					        <button type="button" data-dismiss="modal" class="btn btn-primary">
+					        	Закрыть
+					        </button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 
 				</div>
 
@@ -337,7 +488,7 @@
  
 			<div class="section-title wow fadeIn">
 				<h2>Тарифы</h2>
-				<h4>У нас самые оптимальные цены</h4>
+				<h4>У нас новогодние скидки!</h4>
 			</div>
 			<section class="row">
 			
@@ -374,7 +525,9 @@
 		                        </div>
 		                        <div class="pricing-footer">
 
-		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ПОДАТЬ ЗАЯВКУ</a>
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">
+		                            	Подать заявку
+		                            </a>
 		                        </div>
 		                    </div>
 		                </div>
@@ -405,7 +558,9 @@
 		                        </div>
 		                        <div class="pricing-footer">
 
-		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">ПОДАТЬ ЗАЯВКУ</a>
+		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">
+		                            	Подать заявку
+		                            </a>
 		                        </div>
 			                </div>
 	                    </div>
@@ -437,7 +592,7 @@
 		                        <div class="pricing-footer">
 
 		                            <a href="#" class="wow bounceIn btn btn-warning btn-lg">
-		                            	ПОДАТЬ ЗАЯВКУ
+		                            	Подать заявку
 		                            </a>
 		                        </div>
 			                </div>
