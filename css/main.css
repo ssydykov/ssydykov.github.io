@@ -54,6 +54,13 @@ src: url("css/fonts/Manrope/semibold.otf") format("opentype");
   display: inline-block;
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
 .showcss{ display:block;}
 .hidecss{ display:none;}
 
@@ -354,7 +361,7 @@ PRICING STYLES
     .db-pricing-eleven .price {
         background-color: rgba(0, 0, 0, 0.25);
         padding: 40px 20px 20px 20px;
-        font-size: 60px;
+        font-size: 48px;
         font-weight: 900;
         color: #FFFFFF;
     }
@@ -371,7 +378,7 @@ PRICING STYLES
         padding: 25px 15px;
         font-weight: 900;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .db-pricing-eleven .pricing-footer {
@@ -1013,8 +1020,8 @@ to {
 	padding: 60px 15px;
 	color: #FFF;
 	text-align: center;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-	background-color: #6883cc;
+	/*text-shadow: 0 1px 0 rgba(0, 0, 0, .1);*/
+	background-color: rgba(0, 0, 0, .9);
 	background-image:url("../images/footer.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1071,17 +1078,18 @@ to {
     top: 50%;
     margin-top: -12px;
     left: 50%;
-    margin-left: -35px;
+    margin-left: -60px;
     height: 24px;
-    width: 70px;
+    width: 120px;
     text-align: center;
     display: block;
 }
 .spinner > div {
     width: 18px;
     height: 18px;
-    background-color: #333;
-    border-radius: 100%;
+    margin: 4px;
+    /*background-color: #333;*/
+    border-radius: 25%;
     display: inline-block;
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
     animation: bouncedelay 1.4s infinite ease-in-out;
@@ -1091,10 +1099,22 @@ to {
     animation-fill-mode: both;
 }
 .spinner .bounce1 {
+    background-color: #29BAF1;
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
 }
 .spinner .bounce2 {
+    background-color: #F2C35E;
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.spinner .bounce3 {
+    background-color: #3CE696;
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+.spinner .bounce4 {
+    background-color: #F05565;
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
 }
