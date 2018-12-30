@@ -47,6 +47,13 @@ font-family: "Manrope Semi Bold";
 src: url("css/fonts/Manrope/semibold.otf") format("opentype");
 }
 
+.row:before{
+  display: inline-block;
+}
+.row:after{
+  display: inline-block;
+}
+
 .showcss{ display:block;}
 .hidecss{ display:none;}
 
