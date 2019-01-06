@@ -487,12 +487,23 @@ a:hover,a:focus{color:#5173bd;}
 .modal-body {
 
   padding: 8px 16px 8px 16px;
-  background-color: #F9F9F9;
+  background-color: #fbfbfb;
 }
 .modal-body-signin {
 
   padding: 8px 16px 8px 16px;
-  background-color: #e7e7e7;
+  background-color: #fbfbfb;
+}
+.modal-body-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Manrope Light', 'Arial', sans-serif;
+    height: auto;
+    padding: 10px;
+    border: 0.5px solid #E9E9E9;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .modal-footer {
@@ -1110,12 +1121,12 @@ to {
 }
 .spinner .bounce3 {
     background-color: #3CE696;
-    -webkit-animation-delay: -0.16s;
+    -webkit-animation-delay: -0.8s;
     animation-delay: -0.16s;
 }
 .spinner .bounce4 {
     background-color: #F05565;
-    -webkit-animation-delay: -0.16s;
+    -webkit-animation-delay: -0.4s;
     animation-delay: -0.16s;
 }
 @-webkit-keyframes bouncedelay {

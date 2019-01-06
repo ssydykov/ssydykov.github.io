@@ -145,7 +145,7 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" style="margin: 4px;"/>
 
 		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoAnimation" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
@@ -165,7 +165,7 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" style="margin: 4px;"/>
 
 		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoConceptArt" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
@@ -185,7 +185,7 @@
 		                  
 		                  	<br/>
 
-		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
+		                  	<input type="button" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" style="margin: 4px;"/>
 
 		                  	<input type="button" value="Инфо" class="btn btn-info" data-toggle="modal" data-target="#infoScripting" style="margin: 4px;" />
 		                	<!-- <small class="text-muted">8 недель</small> -->
@@ -234,8 +234,8 @@
 							+ Дополнительный урок по конвертированию видео и размещению в инстаграм.
 					      </h6></div>
 					      <div class="modal-footer">
-					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
-					        <button type="button" data-dismiss="modal" class="btn btn-primary">
+					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" data-type="Animation" style="margin: 4px;"/>
+					        <button type="button" data-dismiss="modal" class="btn btn-info">
 					        	Закрыть
 					        </button>
 					      </div>
@@ -271,8 +271,8 @@
 							6. Теория: "Как продвигать свое творчество в соцсетях, под руководством наставника"
 					      </h6></div>
 					      <div class="modal-footer">
-					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
-					        <button type="button" data-dismiss="modal" class="btn btn-primary">
+					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" data-type="Concept" style="margin: 4px;"/>
+					        <button type="button" data-dismiss="modal" class="btn btn-info">
 					        	Закрыть
 					        </button>
 					      </div>
@@ -313,19 +313,17 @@
 							Этапы разработки игр. Основные жанры игр. Механики игр. Геймплей.<br/>
 
 							- Введение в интерфейс игрового движка Unity Воссоздание основных механик на примере популярных игр: <br/>
-							1) Flappy bird - tap (1 неделя) <br/>
-							2) Subway surfer - swipe (2 неделя) <br/>
+							1) Flappy bird - изучение tap механики <br/>
+							2) Subway surfer - изучение swipe механики <br/>
 							3) Puzzle game - GUI (интерфейс пользователя) (3 неделя) <br/>
-							4) Mario - управление игрока (wasd), переходы и контроль анимаций (4 неделя) <br/>
-							- Разработка собственного проекта (2 недели). Описание проекта - идея, геймплей, механика, цель (game core loop) <br/>
-							- Build проекта на определенную платформу ( ИЛИ НА ОПРЕДЕЛЁННОЙ ПЛАТФОРМЕ?)<br/>
-							- Подготовка презентации <br/>
-							- Защита<br/>
+							4) Mario - управление игрока (wasd), переходы и контроль анимаций <br/>
+							- Разработка собственного проекта. Описание проекта - идея, геймплей, механика, цель (game core loop) <br/>
+							- Build проекта на определенную платформу<br/>
 							- Загрузка на Play Market или App store
 					      </h6></div>
 					      <div class="modal-footer">
-					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#applyAnimation" style="margin: 4px;"/>
-					        <button type="button" data-dismiss="modal" class="btn btn-primary">
+					      	<input type="button" onclick="closeModal()" value="Подать заявку" class="btn btn-success" data-toggle="modal" data-target="#apply" data-type="Code" style="margin: 4px;"/>
+					        <button type="button" data-dismiss="modal" class="btn btn-info">
 					        	Закрыть
 					        </button>
 					      </div>
@@ -333,36 +331,38 @@
 					  </div>
 					</div>
                 	<!-- Modal apply -->
-					<div class="modal fade" id="applyAnimation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal fade" id="apply" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
 					    <div class="modal-content">
+
+                        <form method="POST" autocomplete="off" class="form-signin">
 					      <div class="modal-header">
 					        <h5 class="modal-title" id="exampleModalLongTitle">
 					        	Я готов создать свою игру!
-					        </h5>
+					        	<br/>
+					        	<small>Бесплатная консультация</small>
+					        </h5> 
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      </div>
 					      <div class="modal-body modal-body-signin">
-					      	
-                            <form method="POST" autocomplete="off" class="form-modal">
                                 
                                 <input class="form-control" placeholder="Как Вас зовут?" id="username" type="text">
                                 <input class="form-control" placeholder="Номер телефона" id="phone" type="text">
                                 <input class="form-control" placeholder="Возраст" id="age" type="text">
-                                    
-                            </form>
 
 					      </div>
 					      <div class="modal-footer">
-					        <button type="submit" data-dismiss="modal" class="btn btn-success">
+					        <button type="submit" class="btn btn-success">
 					        	Отправить
 					        </button>
-					        <button type="button" data-dismiss="modal" class="btn btn-primary">
+					        <button type="button" data-dismiss="modal" class="btn btn-info">
 					        	Закрыть
 					        </button>
 					      </div>
+                        </form>
+
 					    </div>
 					  </div>
 					</div>
@@ -677,12 +677,12 @@
 				                <div class="row">
 				                    <div class="col-md-6">
 				                        <div class="form-group">
-				                            <label for="name" style="color: #292929;">
+				                            <label for="username" style="color: #292929;">
 				                                Как Вас зовут? </label>
 				                            <div class="input-group">
 				                                <span class="input-group-addon"><span class="fa fa-user"></span>
 				                                </span>
-	                                    		<input class="form-control" placeholder="Введите имя" id="username" type="text">
+				                                <input class="form-control" placeholder="Как Вас зовут?" id="username" type="text">
 				                            </div>
 				                        </div>
 				                        <div class="form-group">
@@ -691,16 +691,16 @@
 				                            <div class="input-group">
 				                                <span class="input-group-addon"><span class="fa fa-envelope"></span>
 				                                </span>
-	                                    		<input type="email" class="form-control" placeholder="Введите e-mail" id="username" type="text">
+	                                    		<input type="email" class="form-control" placeholder="Введите e-mail" id="email">
 				                            </div>
 				                        </div>
 				                        <div class="form-group">
-				                            <label for="tel" style="color: #292929;">
+				                            <label for="phone" style="color: #292929;">
 				                                Телефон </label>
 				                            <div class="input-group">
 				                                <span class="input-group-addon"><span class="fa fa-phone"></span>
 				                                </span>
-	                                    		<input type="tel" class="form-control" placeholder="Введите номер телефона" id="username" type="text">
+				                                <input class="form-control" placeholder="Номер телефона" id="phone" type="text">
 				                            </div>
 				                        </div>
 				                    </div>
@@ -729,8 +729,8 @@
 	                        Тел: +7 (708) 259 1022
 			            </address>
 	                    <address>
-	                        <strong>Fade-in team</strong><br>
-	                        <a href="mailto:#" style="font-weight: bold;text-decoration: underline; color: #4A90E2;">fadein.games@gmail.com</a>
+	                        <strong>Email:</strong><br>
+	                        <a href="mailto:#" style="font-weight: bold;text-decoration: underline; color: #fff;">fadein.games@gmail.com</a>
 	                    </address>
                         <a href="https://vk.com/f4d3in" style="margin-right: 12px;">
                         	<img src="images/vk.png" width="25px">
