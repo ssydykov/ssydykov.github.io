@@ -20,23 +20,54 @@ $(document).ready(function () {
         var token = "530206525:AAGNJ7WY58k_D5QhJlrn4wcdLHEuvASXfZs";
         var chat_id = "-329126431";
 
-        var test = $('#username').val();
-        var name = $('#username').val();
-        var phone = $('#phone').val();
-        var age = $('#age').val();
-        var type = $('#type').val();
-        var email = $('#email').val();
-        var message = $('#message').val();
+        var postMessage = "";
 
-        $('#username').val('');
-        $('#phone').val('');
-        $('#age').val('');
-        $('#email').val('');
-        $('#message').val('');
+        if ($('#username').val() != "") {
 
-        $('#apply').modal('hide');
+          // Консультация
+          var name = $('#username').val();
+          var phone = $('#phone').val();
+          var age = $('#age').val();
 
-        var postMessage = "Имя: " + name + "%0AТелефон: " + phone + "%0AEmail: " + email  + "%0AВозраст: " + age + "%0AMessage: " + message;
+          $('#username').val('');
+          $('#phone').val('');
+          $('#age').val('');
+
+          postMessage = "Бесплатная Консультация%0A%0AИмя: " + name + "%0AТелефон: " + phone + 
+          "%0AВозраст: "  + age;
+        
+        } else if ($('#usernameModal').val() != "") {
+
+          // Заявка
+          var name = $('#usernameModal').val();
+          var phone = $('#phoneModal').val();
+          var age = $('#ageModal').val();
+
+          $('#usernameModal').val('');
+          $('#phoneModal').val('');
+          $('#ageModal').val('');
+
+          $('#apply').modal('hide');
+
+          postMessage = "Заявка%0A%0AИмя: " + name + "%0AТелефон: " + phone + 
+          "%0AВозраст: " + age;
+        
+        } else if ($('#usernameMessage').val() != "") {
+
+          // Консультация
+          var name = $('#usernameMessage').val();
+          var phone = $('#phoneMessage').val();
+          var email = $('#emailMessage').val();
+          var message = $('#messageMessage').val();
+
+          $('#usernameMessage').val('');
+          $('#phoneMessage').val('');
+          $('#emailMessage').val('');
+          $('#messageMessage').val('');
+
+          postMessage = "Консультация по вопросу%0A%0AИмя: " + name + "%0AТелефон: " + phone +
+          "%0AEmail: " + email  + "%0A%0AСообщение:%0A" + message;
+        }
 
         // alert(postMessage);
 
