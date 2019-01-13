@@ -42,14 +42,16 @@ $(document).ready(function () {
           var name = $('#usernameModal').val();
           var phone = $('#phoneModal').val();
           var age = $('#ageModal').val();
+          var type = $('#typeModal').val();
 
           $('#usernameModal').val('');
           $('#phoneModal').val('');
           $('#ageModal').val('');
+          $('#typeModal').val('');
 
           $('#apply').modal('hide');
 
-          postMessage = "Заявка%0A%0AИмя: " + name + "%0AТелефон: " + phone + 
+          postMessage = "Заявка на курс " + type + "%0A%0AИмя: " + name + "%0AТелефон: " + phone + 
           "%0AВозраст: " + age;
         
         } else if ($('#usernameMessage').val() != "") {
