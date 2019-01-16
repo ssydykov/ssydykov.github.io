@@ -294,24 +294,7 @@ input[type="radio"]:checked ~ figure figcaption {
   z-index:8;
 }
 
-/*============================================================
-BACKGROUND COLORS
-============================================================*/
-.db-bk-color-one {
-    background-color: #f05565;
-}
 
-.db-bk-color-two {
-    background-color: #46A6F7;
-}
-
-.db-bk-color-three {
-    background-color: #3FC887;
-}
-
-.db-bk-color-six {
-    background-color: #F59B24;
-}
 /*============================================================
 PRICING STYLES
 ==========================================================*/
@@ -324,11 +307,11 @@ PRICING STYLES
     -moz-border-radius: 0px;
 }
 
-    .db-button-color-square:hover {
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.50);
-        border: none;
-    }
+.db-button-color-square:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+}
 
 
 .db-pricing-eleven {
@@ -338,52 +321,101 @@ PRICING STYLES
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     color: #fff;
     line-height: 30px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
 }
 
-    .db-pricing-eleven ul {
-        list-style: none;
-        margin: 0;
-        text-align: center;
-        padding-left: 0px;
-    }
+.db-pricing-eleven ul {
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0px;
+}
 
-        .db-pricing-eleven ul li {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            cursor: pointer;
-        }
+.db-pricing-eleven ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
 
-            .db-pricing-eleven ul li i {
-                margin-right: 5px;
-            }
+.db-pricing-eleven ul li i {
+    margin-right: 5px;
+}
 
 
-    .db-pricing-eleven .price {
-        background-color: rgba(0, 0, 0, 0.25);
-        padding: 40px 20px 20px 20px;
-        font-size: 48px;
-        font-weight: 900;
-        color: #FFFFFF;
-    }
+.db-pricing-eleven .price-one {
+    background-color: #29BAF1;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
+    padding: 40px 20px 20px 20px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.db-pricing-eleven .price-two {
+    background-color: #F2C35E;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
+    padding: 40px 20px 20px 20px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+.db-pricing-eleven .price-three {
+    background-color: #EF5565;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
+    padding: 40px 20px 20px 20px;
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
 
-        .db-pricing-eleven .price small {
-            color: #B8B8B8;
-            display: block;
-            font-size: 12px;
-            margin-top: 22px;
-        }
+.db-pricing-eleven .price-content {
+  
+    color: #383435;
+    padding-bottom: 24px;
+}
+.db-pricing-eleven .type-sale-one {
+    background-color: #3D8ED2;
+    padding: 25px 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.db-pricing-eleven .type-sale-two {
+    background-color: #E6B752;
+    padding: 25px 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.db-pricing-eleven .type-sale-three {
+    background-color: #CC4857;
+    padding: 25px 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 24px;
+}
 
-    .db-pricing-eleven .type-sale {
-        background-color: rgba(0, 0, 0, 0.15);
-        padding: 25px 15px;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-size: 24px;
-    }
+.db-bk-color {
+    background-color: #FBFCFC;
+}
 
-    .db-pricing-eleven .pricing-footer {
-        padding: 20px;
-    }
+.db-pricing-eleven .price small {
+    color: #B8B8B8;
+    display: block;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.db-pricing-eleven .pricing-footer {
+    padding: 20px;
+}
 
 .db-attached > .col-lg-4,
 .db-attached > .col-lg-3,
@@ -1069,6 +1101,111 @@ to {
 
 
 /*My style*/
+
+.card {
+    padding-top: 20px;
+    margin: 10px 0 20px 0;
+    background-color: rgba(214, 224, 226, 0.2);
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.card.people {
+    position: relative;
+    display: inline-block;
+    width: 170px;
+    height: 300px;
+    padding-top: 0;
+    /*margin-left: 20px;*/
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card.people:first-child {
+    margin-left: 0;
+}
+
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    /*margin: 8px 0px 0px 8px;*/
+    overflow: hidden;
+    text-align: center;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    background-color: rgba(214, 224, 226, 0.1);
+}
+
+.card.hovercard .cardheader-blue {
+    background-color: #29BAF1;
+    /*background-size: cover;*/
+    height: 160px;
+}
+.card.hovercard .cardheader-orange {
+    background-color: #F2C35E;
+    /*background-size: cover;*/
+    height: 160px;
+}
+.card.hovercard .cardheader-red {
+    background-color: #F05565;
+    /*background-size: cover;*/
+    height: 160px;
+}
+.card.hovercard .avatar {
+    position: relative;
+    top: -100px;
+    margin-bottom: -90px;
+}
+
+.card.hovercard .avatar img {
+    width: 150px;
+    height: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(0,0,0,0.05);
+}
+
+.card.hovercard .info {
+    text-align: justify;
+    padding: 4px 32px 10px;
+}
+
+.card.hovercard .info .title {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+
 
 .spn_hol {
     position: fixed;
