@@ -1061,10 +1061,10 @@ to {
 
 .footercta {
 	padding: 60px 15px;
-	color: #FFF;
+	color: #383435;
 	text-align: center;
 	/*text-shadow: 0 1px 0 rgba(0, 0, 0, .1);*/
-	background-color: rgba(0, 0, 0, .9);
+	background-color: #FBFCFC;
 	background-image:url("../images/footer.png");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1082,6 +1082,12 @@ to {
 	padding:0 13px;
 	display:inline-block;
 	padding-bottom: 15px;
+}
+
+.well.well-sm{
+
+    background-color: #FBFCFC;
+    padding: 16px;
 }
 
 .js .animate-box {

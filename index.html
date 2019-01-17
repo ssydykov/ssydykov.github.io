@@ -93,7 +93,7 @@
 	                                    <input class="form-control" placeholder="Номер телефона" id="phone" type="text">
 	                                    <input class="form-control" placeholder="Возраст" id="age" type="text">
 	                                    <br>
-	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Бесплатная консультация »">
+	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Бесплатная консультация">
 	                                </fieldset>
 	                            </form>
 	                        </div>
@@ -113,11 +113,11 @@
 		</main>
  
 		<div class="section-title wow fadeIn data-wow-duration="1s" data-wow-delay=".5s"" id="COURSES">
-			<h4 class="wow fadeIn">
+			<h4 class="wow fadeIn" style="margin-right: 16px; margin-left: 16px;">
   		  		<img src="images/gda_logo.png" class="img-responsive" alt="Conxole Admin" width="48px" /> <br/>
   		  		<strong>GameDev Academy</strong> - академия разработок видеоигр. 
   		  		<br/>
-				Сейчас открыт набор в группы на курсы анимации, концепт-арта и программирования
+				Сейчас открыт набор в группы на курсы концепт-арта, анимации и программирования
 			</h4>
 			<br/><br/>
 
@@ -133,7 +133,7 @@
 				<div class="row">
 
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
-		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px">
+		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/concept.png" data-holder-rendered="true">
 		                <div class="card-body">
 
@@ -157,7 +157,7 @@
 		              </div>
 		            </div>
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
-		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px">
+		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/animation.png" data-holder-rendered="true">
 		                <div class="card-body">
 
@@ -183,7 +183,7 @@
 		              </div>
 		            </div>
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
-		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px">
+		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/code.png" data-holder-rendered="true">
 		                <div class="card-body">
 
@@ -750,7 +750,9 @@
 		            </div>
 		            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
 		            <br/>
-            			<input class="btn btn-lg btn-success btn-block" value="Подать заявку">
+		            	<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-whatever="Готов!" data-target="#apply" style="margin: 4px;">
+		                  		Подать заявку
+	                  	</button>
 		            <br/>
 		            </div>
 
@@ -781,10 +783,11 @@
 	    <! -- ******************** FOOTER ******************** -->	  
 		<main class="footercta" role="main" id="CONTACT">
 			<div class="container">
-				<h1 class="wow fadeIn">
+				<h3 class="wow fadeIn">
 					<strong>Остались вопросы?</strong>
 					Будем рады ответить!
-				</h1>
+				</h3>
+				<br/><br/>
  
 			    <div class="row wow fadeIn">
 			        <div class="col-md-8">
@@ -796,17 +799,17 @@
 				                            <label for="username" style="color: #292929;">
 				                                Как Вас зовут? </label>
 				                            <div class="input-group">
-				                                <span class="input-group-addon"><span class="fa fa-user"></span>
-				                                </span>
-				                                <input class="form-control" placeholder="Как Вас зовут?" id="usernameMessage" type="text">
+				                                <!-- <span class="input-group-addon"><span class="fa fa-user"></span>
+				                                </span> -->
+				                                <input class="form-control" placeholder="Введите имя" id="usernameMessage" type="text">
 				                            </div>
 				                        </div>
 				                        <div class="form-group">
 				                            <label for="email" style="color: #292929;">
 				                                E-mail адрес </label>
 				                            <div class="input-group">
-				                                <span class="input-group-addon"><span class="fa fa-envelope"></span>
-				                                </span>
+				                                <!-- <span class="input-group-addon"><span class="fa fa-envelope"></span>
+				                                </span> -->
 	                                    		<input type="email" class="form-control" placeholder="Введите e-mail" id="emailMessage">
 				                            </div>
 				                        </div>
@@ -814,9 +817,9 @@
 				                            <label for="phone" style="color: #292929;">
 				                                Телефон </label>
 				                            <div class="input-group">
-				                                <span class="input-group-addon"><span class="fa fa-phone"></span>
-				                                </span>
-				                                <input class="form-control" placeholder="Номер телефона" id="phoneMessage" type="text">
+				                                <!-- <span class="input-group-addon"><span class="fa fa-phone"></span>
+				                                </span> -->
+				                                <input class="form-control" placeholder="Введите номер телефона" id="phoneMessage" type="text">
 				                            </div>
 				                        </div>
 				                    </div>
@@ -829,7 +832,7 @@
 				                        </div>
 				                    </div>
 				                    <div class="col-md-12">
-	                                    <input class="btn btn-lg btn-success btn-block" type="submit" id="submit" value="Отправить »">
+	                                    <input class="btn btn-lg btn-success btn-block" type="submit" id="submit" value="Отправить">
 				                    </div>
 				                </div>
 			                </form>
@@ -837,7 +840,7 @@
 			        </div>
 			        <div class="col-md-4">
 			            <form>
-			            <legend style="color: white;"><span class="fa fa-globe"></span> Наши контакты:</legend>
+			            <legend>Наши контакты:</legend>
 			            <address>
 	                        <strong>Fade-in Games</strong><br>
 	                        Розыбакиева 227, 050060<br>
@@ -846,20 +849,21 @@
 			            </address>
 	                    <address>
 	                        <strong>Email:</strong><br>
-	                        <a href="mailto:#" style="font-weight: bold;text-decoration: underline; color: #fff;">fadein.games@gmail.com</a>
+	                        <a href="mailto:#" style="font-weight: bold;text-decoration: underline; color: #5173bd;">fadein.games@gmail.com</a>
 	                    </address>
-                        <a href="https://vk.com/f4d3in" style="margin-right: 12px;">
-                        	<img src="images/vk.png" width="25px">
-                        </a>
-                    	<a href="https://www.instagram.com/f4d3.in/" style="margin-right: 12px;">
-                    		<img src="images/instagram.png" width="25px">
-                    	</a>
-                    	<a href="https://t.me/F4d3in" style="margin-right: 12px;">
-                    		<img src="images/telegram.png" width="25px">
-                    	</a>
-                    	<a href="https://facebook.com/f4d3.in/">
-                    		<img src="images/facebook.png" width="25px">
-                    	</a>
+
+	                        <a href="https://vk.com/f4d3in" style="margin-right: 12px;">
+	                        	<img src="images/vk.png" width="25px">
+	                        </a>
+	                    	<a href="https://www.instagram.com/f4d3.in/" style="margin-right: 12px;">
+	                    		<img src="images/instagram.png" width="25px">
+	                    	</a>
+	                    	<a href="https://t.me/F4d3in" style="margin-right: 12px;">
+	                    		<img src="images/telegram.png" width="25px">
+	                    	</a>
+	                    	<a href="https://facebook.com/f4d3.in/">
+	                    		<img src="images/facebook.png" width="25px">
+	                    	</a>
 			            </form>
 			        </div>
 			    </div>
@@ -869,7 +873,7 @@
 		<div class="container">
 			<section class="row breath">
 				<div class="col-md-12 footerlinks">
-					<p>&copy; 2018 Fade-in Games. All Rights Reserved</p>
+					<p>&copy; 2019 Fade-in Games. All Rights Reserved</p>
 				</div>
 			</section><! --/section -->
 		</div><! --/container -->
