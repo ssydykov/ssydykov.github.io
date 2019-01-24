@@ -1185,8 +1185,8 @@ to {
 }
 
 .card.hovercard .info {
-    text-align: right;
-    padding: 4px 32px 10px;
+    text-align: left;
+    padding: 4px 16px 10px;
 }
 
 .card.hovercard .info .title {
