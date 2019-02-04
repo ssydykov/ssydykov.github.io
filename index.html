@@ -113,17 +113,31 @@
 		</main>
  
 		<div class="section-title wow fadeIn data-wow-duration="1s" data-wow-delay=".5s"" id="COURSES">
-			<h4 class="wow fadeIn" style="margin-right: 8px; margin-left: 8px;">
   		  		<img src="images/gda_logo.png" class="img-responsive" alt="Conxole Admin" width="48px" /> <br/>
-  		  		<strong>GameDev Academy</strong> - академия разработок видеоигр. 
-  		  		<br/>
-				Сейчас открыт набор в группы на курсы концепт-арта, анимации и программирования
-			</h4>
+
+				<h2>GameDev Academy</h2>
+				<h4>Создай и запусти игру своей мечты!</h4>
+			
 			<br/><br/>
 
-			<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WPF15wLx-f4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <div class="row features">
+                <div class="col-md-2 col-sm-12 col-xs-12"> </div>
+                <div class="col-md-8 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qjyi-Yd_zhw" allowfullscreen></iframe>
+					</div>
+				<br/><br/>
+				</div>
+			</div>
 		</div>
-		
+
+		<img src="images/gda_hor_logo.png" width="72px" style="margin: auto; display: block;">
+
+		<div class="section-title wow fadeIn">
+			<h2>Наши курсы</h2>
+			<h4>Сейчас открыт набор в группы</h4>
+		</div>
+
 		<!-- Courses -->
 		<section class="row features row-eq-height">
 
@@ -135,22 +149,25 @@
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
 		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/concept.png" data-holder-rendered="true">
-		                <div class="card-body">
+		                <div class="card-body" align="center">
 
-			                <h6 style="margin-left: 16px; height: 100%;">
+			                <h6 style="margin-left: 16px; height: 100%; text-align: left;">
 			                	- Обучение в программах: Adobe Photoshop, Paint Tool Sai. <br/>
-								- Cоздание персонажа и иллюстраций, поиск стилистики, сеттинга, цветовых решений.
+								- Cоздание персонажа и иллюстраций, поиск стилистики, сеттинга, цветовых решений...
+								<a href="" data-toggle="modal" data-target="#infoConceptArt">
+									<strong>подробнее</strong>
+								</a>
 			                </h6>
 		                  
 		                  	<br/>
 
-		                  	<button class="btn btn-success" data-toggle="modal" data-whatever="Концепт-арт" data-target="#apply" style="margin: 4px;">
+		                  	<button class="btn btn-info" data-toggle="modal" data-whatever="Концепт-арт" data-target="#apply" style="margin: 4px;">
 		                  		Подать заявку
 		                  	</button>
 
-		                  	<button class="btn btn-info" data-toggle="modal" data-target="#infoConceptArt" style="margin: 4px;" >
+		                  	<!-- <button class="btn btn-info" data-toggle="modal" data-target="#infoConceptArt" style="margin: 4px;" >
 		                  		Инфо
-		                  	</button>
+		                  	</button> -->
 		                	<!-- <small class="text-muted">8 недель</small> -->
 
 		                </div>
@@ -159,25 +176,22 @@
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
 		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/animation.png" data-holder-rendered="true">
-		                <div class="card-body">
+		                <div class="card-body" align="center">
 
-			                <h6 style="margin-left: 16px; height: 100%;">
+			                <h6 style="margin-left: 16px; height: 100%; text-align: left;">
 			                	- Обучение в программах: Adobe Photoshop, Adobe Animate. <br/>
 			                	- Раскадровка, аниматика, композиция кадров,
-			                	правило трех, расстановка камеры.
+			                	правило трех, расстановка камеры...
+								<a href="" data-toggle="modal" data-target="#infoAnimation">
+									<strong>подробнее</strong>
+								</a>
 			                </h6>
 		                  
 		                  	<br/>
 
-		                  	<button class="btn btn-success" data-toggle="modal" data-whatever="Анимация" data-target="#apply" style="margin: 4px;">
+		                  	<button class="btn btn-warning" data-toggle="modal" data-whatever="Анимация" data-target="#apply" style="margin: 4px;">
 		                  		Подать заявку
 		                  	</button>
-
-		                  	<button class="btn btn-info" data-toggle="modal" data-target="#infoAnimation" style="margin: 4px;" >
-		                  		Инфо
-		                  	</button>
-
-		                	<!-- <small class="text-muted">8 недель</small> -->
 
 		                </div>
 		              </div>
@@ -185,22 +199,25 @@
 					<div class="row-eq-height col-md-4 col-sm-12 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
 		              <div class="card mb-4 shadow-sm" style="padding: 0px 0px 8px 0px; background-color: #FBFCFC;">
 		                <img class="card-img-top" src="images/code.png" data-holder-rendered="true">
-		                <div class="card-body">
+		                <div class="card-body" align="center">
 
-			                <h6 style="margin-left: 16px; height: 100%;">
+			                <h6 style="margin-left: 16px; height: 100%; text-align: left;">
 			                	- Обучение в программах: Unity 3D, Visual Studio. <br/>
-								- Программирование на языке C#, создание UI/UX, сборка собственных проектов.
+								- Программирование на языке C#, создание UI/UX, сборка собственных проектов...
+								<a href="" data-toggle="modal" data-target="#infoScripting">
+									<strong>подробнее</strong>
+								</a>
 			                </h6>
 		                  
 		                  	<br/>
 
-		                  	<button class="btn btn-success" data-toggle="modal" data-whatever="Программирования" data-target="#apply" style="margin: 4px;">
+		                  	<button class="btn btn-error" data-toggle="modal" data-whatever="Программирования" data-target="#apply" style="margin: 4px;">
 		                  		Подать заявку
 		                  	</button>
 
-		                  	<button class="btn btn-info" data-toggle="modal" data-target="#infoScripting" style="margin: 4px;" >
+		                  	<!-- <button class="btn btn-info" data-toggle="modal" data-target="#infoScripting" style="margin: 4px;" >
 		                  		Инфо
-		                  	</button>
+		                  	</button> -->
 		                	<!-- <small class="text-muted">8 недель</small> -->
 		                </div>
 		              </div>
@@ -386,58 +403,7 @@
 		<br/><br/>
 		<!-- <hr/> -->
 		<img src="images/gda_hor_logo.png" width="72px" style="margin: auto; display: block;">
-		<!-- <section>
-			
-			<div class="number" role="main" style="width: 100%; padding: 0;">
-				<div class="container wow fadeIn" data-wow-duration="1s">
-				    <div class="row" style="margin: 60px 0; text-align: center;">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-							<h2 style="color: #fff;">
-								Интересные факты
-     						</h2>
-     						<h4 style="color: #fff;">
-								Посмотрим некоторые цифры о нас
-							</h4>
-						</div>
-					</div>
-					<div class="row" style="margin: 60px 0; text-align: center;">
-						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<a class="fig">
-									<img src="https://img.icons8.com/color/480/000000/multiple-inputs.png" width="72px">
-									<h2 style="color: #fff; font-weight: 12;">12968</h2>
-									<h5 style="color: #fff; margin-top: 16px;">СДЕЛАННЫХ ЗАГРУЗОК</h5>
-								</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<a class="fig">
-									<img src="https://img.icons8.com/color/480/000000/mind-map.png" width="72px">
-									<h2 style="color: #fff; font-weight: 12;">623489</h2>
-									<h5 style="color: #fff;">ВЫПОЛНЕННЫХ СЕССИЙ</h5>
-								</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<a class="fig">
-									<img src="https://img.icons8.com/color/480/000000/collaboration.png" width="72px">
-									<h2 style="color: #fff; font-weight: 12;">376</h2>
-									<h5 style="color: #fff;">ОТЗЫВОВ</h5>
-								</a>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<a class="fig">
-									<img src="https://img.icons8.com/color/480/000000/warranty.png" width="72px">
-									<h2 style="color: #fff; font-weight: 12;">12</h2>
-									<h5 style="color: #fff;">НАГРАЖДЕНИЙ</h5>
-								</a>
-						</div>
-					</div>
-
-					<br/><br/><br/><br/><br/>
-					<br/><br/><br/><br/><br/>
-					<br/><br/><br/><br/><br/>
-				</div>
-			</div>
-
-		</section> -->
+		
 
 		<!-- Portfolio  -->
 		<div class="container" id="PORTFOLIO">
@@ -526,6 +492,16 @@
 	                    </div>
 	                </div>
         		</div>
+
+	            <div class="col-md-3 col-lg-4">
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
+	            <br/><br/>
+	            	<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-whatever="Готов!" data-target="#apply" style="margin: 4px;">
+	                  		Подать заявку
+                  	</button>
+	            <br/>
+	            </div>
 
 			</section>
 
@@ -619,47 +595,46 @@
 		            </div>
 
 	            </div>
+	            <div class="col-md-3 col-lg-4">
+	            </div>
+	            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
+	            <br/>
+	            	<button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-whatever="Готов!" data-target="#apply" style="margin: 4px;">
+	                  		Подать заявку
+                  	</button>
+	            <br/>
+	            </div>
 			</section>
 		</div>
 
 		<br/><br/>
 		<!-- <hr/> -->
-		<img src="images/gda_hor_logo.png" width="72px" style="margin: auto; display: block;">
+		<!-- <img src="images/gda_hor_logo.png" width="72px" style="margin: auto; display: block;"> -->
 		<!-- Prising list	   -->
-		<div class="container">
+		<!-- <div class="container">
  
 			<div class="section-title wow fadeInUp">
 				<h2>Цены</h2>
-				<h4>У нас скидки, успей записаться!</h4>
+				<h4>У нас самые оптимальные цены!</h4>
 			</div>
 			<section class="row">
 			
 		            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 wow fadeInUp data-wow-duration="1s" data-wow-delay=".5s"">
-		                <!-- <div class="cnrflash">
-		                    <div class="cnrflash-inner">
-		                        <span class="cnrflash-label" style="font-size: 12px;">
-		                        	ЛУЧШИЙ <br> ВЫБОР!
-	                            </span>
-		                    </div>
-		                </div> -->
 		                <div class="db-wrapper">
 		                    <div class="db-pricing-eleven db-bk-color">
 		                        <div class="price-one">
-		                            <sup>&#8376</sup> 61200 <br/><br/>
-	                                <h6 style="color: #fff;">Успей до 21го января!</h6>
+		                            <sup>&#8376</sup> 72000 <br/><br/>
+	                                <h6 style="color: #fff;">Стоимость полного курса</h6>
 		                        </div>
 		                        <div class="type-sale-one">
-	                            	15% СКИДКА
+	                            	Концепт-арт
 		                        </div>
 		                        <div class="price-content" style="margin-top: 32px;">
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px;">
 	                            		Длительность курса
 	                            	</h5>
 	                            	2 месяца 
-	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
-	                            		Начало курсов
-	                            	</h5>
-	                            	4го февраля 
+	                            	 
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
 	                            		Время
 	                            	</h5>
@@ -667,7 +642,7 @@
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
 	                            		Дни недели
 	                            	</h5>
-	                            	Пн, Ср, Пт 
+	                            	Вт, Чт, Сб 
 		                        </div>
 		                        
 		                    </div>
@@ -677,21 +652,18 @@
 		                <div class="db-wrapper">
 			                <div class="db-pricing-eleven db-bk-color">
 			                    <div class="price-two">
-		                            <sup>&#8376</sup> 64800 <br/><br/>
-	                                <h6 style="color: #fff;">до 28го января</h6>
+		                            <sup>&#8376</sup> 72000 <br/><br/>
+	                                <h6 style="color: #fff;">Стоимость полного курса</h6>
 			                    </div>
 			                    <div class="type-sale-two">
-			                        10% СКИДКА
+			                        Анимация
 			                    </div>
 		                        <div class="price-content" style="margin-top: 32px;">
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px;">
 	                            		Длительность курса
 	                            	</h5>
 	                            	2 месяца 
-	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
-	                            		Начало курсов
-	                            	</h5>
-	                            	4го февраля 
+	                            	 
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
 	                            		Время
 	                            	</h5>
@@ -710,20 +682,17 @@
 			                <div class="db-pricing-eleven db-bk-color">
 			                    <div class="price-three">
 		                            <sup>&#8376</sup> 72000 <br/><br/>
-	                                <h6 style="color: #fff;">до 4го февраля</h6>
+	                                <h6 style="color: #fff;">Стоимость полного курса</h6>
 			                    </div>
 			                    <div class="type-sale-three">
-			                       	Полный курс
+			                       	Программирование
 			                    </div>
 		                        <div class="price-content" style="margin-top: 32px;">
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px;">
 	                            		Длительность курса
 	                            	</h5>
 	                            	2 месяца 
-	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
-	                            		Начало курсов
-	                            	</h5>
-	                            	4го февраля 
+	                            	 
 	                            	<h5 style="font-weight: 600; font-size: 14; margin: 0px; margin-top: 16px;">
 	                            		Время
 	                            	</h5>
@@ -749,9 +718,9 @@
 
 			</section>
  
-		</div>
+		</div> -->
 
-		<br/>
+		<!-- <br/> -->
 		<!-- <hr/> -->
 		<img src="images/gda_hor_logo.png" width="72px" style="margin: auto; display: block;">
 
@@ -846,7 +815,7 @@
 	                        <a href="https://vk.com/f4d3in" style="margin-right: 12px;">
 	                        	<img src="images/vk.png" width="25px">
 	                        </a>
-	                    	<a href="https://www.instagram.com/f4d3.in/" style="margin-right: 12px;">
+	                    	<a href="https://www.instagram.com/gamedev.academy/" style="margin-right: 12px;">
 	                    		<img src="images/instagram.png" width="25px">
 	                    	</a>
 	                    	<a href="https://t.me/F4d3in" style="margin-right: 12px;">

@@ -770,6 +770,18 @@ to {
   color:#FFF;
   border: 0;
 }
+.btn-error {
+  background-color: #EF5565;
+  color: #fff;
+  background-image:none;
+  border: 0;
+  line-height: 1.8;
+}
+.btn-error:hover, .btn-error:focus, .btn-error:active {
+  background-color: #CC4857;
+  color:#FFF;
+  border: 0;
+}
 .btn-warning {
   background-color: #F2C35E;
   background-image:none;
