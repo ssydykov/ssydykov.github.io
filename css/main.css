@@ -654,7 +654,7 @@ a:hover,a:focus{color:#5173bd;}
 	text-align:center;
 	text-shadow:0 1px 0 rgba(0,0,0,.1);
 	background-color:#6883cc;
-	background-image:url("../images/home.webp");
+	background-image:url("../images/home.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -895,7 +895,7 @@ to {
 
 .section-title {
 	text-align:center;
-	margin-top:60px;
+	margin-top:48px;
 	margin-bottom:30px;
 }
 .section-title h2 {
@@ -1077,7 +1077,7 @@ to {
 	text-align: center;
 	/*text-shadow: 0 1px 0 rgba(0, 0, 0, .1);*/
 	background-color: #FBFCFC;
-	background-image:url("../images/footer.webp");
+	background-image:url("../images/footer.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
