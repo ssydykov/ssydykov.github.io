@@ -1120,6 +1120,15 @@ to {
 
 /*My style*/
 
+.course-code-img {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  vertical-align: text-bottom;
+  background: url("../images/code.jpg") no-repeat center top;
+  background-size:cover;
+}
+
 .card {
     padding-top: 20px;
     margin: 10px 0 20px 0;
