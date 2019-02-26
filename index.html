@@ -61,6 +61,18 @@
 		})
   	</script>
 
+  	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbx-vYdTCWG-w7_hTdAY9pn3_7yDJIlyj8lQNQ4iPvwIzpbuR6Q/exec'
+	  const form = document.forms['submit-to-google-sheet']
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => console.log('Success!', response))
+	      .catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+
 </head>
 
 <body>
@@ -117,13 +129,14 @@
 	                        <div class="panel-body">
 	                            <form  id="form-contact" method="POST" autocomplete="off" class="form-signin">
 	                                <fieldset>
-	                                    <input class="form-control" placeholder="Как Вас зовут?" id="username" type="text">
+	                                    <input class="form-control" placeholder="ФИО" id="username" type="text">
 	                                    <input class="form-control" placeholder="Номер телефона" id="phone" type="text">
 	                                    <input class="form-control" placeholder="Возраст" id="age" type="text">
 	                                    <br>
 	                                    <input class="wow bounceIn btn btn-lg btn-success btn-block" type="submit" id="submit" value="Подать заявку">
 	                                </fieldset>
 	                            </form>
+	                        </div>
 	                        </div>
 	                    </div>
 
@@ -152,13 +165,13 @@
                 <div class="col-md-2 col-sm-12 col-xs-12"> </div>
                 <div class="col-md-8 col-sm-12 col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
 					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Qjyi-Yd_zhw" allowfullscreen></iframe>
+						<iframe src="https://player.vimeo.com/video/205907600" class="embed-responsive-item"></iframe>
 					</div>
 				<br/>
 				</div>
 			</div>
-		</div>
-
+		</div> -->
+<!-- 
 		<img src="images/gda_hor_logo.jpg" width="72px" style="margin: auto; display: block;">
 		<br/> -->
 		<div class="section-title wow fadeIn">
@@ -420,7 +433,7 @@
 					      </div>
 					      <div class="modal-body modal-body-signin">
                                 
-                                <input class="form-control" placeholder="Как Вас зовут?" id="usernameModal" type="text">
+                                <input class="form-control" placeholder="ФИО" id="usernameModal" type="text">
                                 <input class="form-control" placeholder="Номер телефона" id="phoneModal" type="text">
                                 <input class="form-control" placeholder="Возраст" id="ageModal" type="text">
                                 <input class="modal-type" type="hidden" id="typeModal" value="">
@@ -812,7 +825,7 @@
 				                            <div class="input-group">
 				                                <!-- <span class="input-group-addon"><span class="fa fa-user"></span>
 				                                </span> -->
-				                                <input class="form-control" placeholder="Введите имя" id="usernameMessage" type="text">
+				                                <input class="form-control" placeholder="ФИО" id="usernameMessage" type="text">
 				                            </div>
 				                        </div>
 				                        <div class="form-group">
@@ -821,7 +834,7 @@
 				                            <div class="input-group">
 				                                <!-- <span class="input-group-addon"><span class="fa fa-envelope"></span>
 				                                </span> -->
-	                                    		<input type="email" class="form-control" placeholder="Введите e-mail" id="emailMessage">
+	                                    		<input type="email" class="form-control" placeholder="E-mail" id="emailMessage">
 				                            </div>
 				                        </div>
 				                        <div class="form-group">
@@ -830,7 +843,7 @@
 				                            <div class="input-group">
 				                                <!-- <span class="input-group-addon"><span class="fa fa-phone"></span>
 				                                </span> -->
-				                                <input class="form-control" placeholder="Введите номер телефона" id="phoneMessage" type="text">
+				                                <input class="form-control" placeholder="Номер телефона" id="phoneMessage" type="text">
 				                            </div>
 				                        </div>
 				                    </div>

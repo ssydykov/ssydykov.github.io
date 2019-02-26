@@ -1,14 +1,30 @@
-// $('#apply').on('show.bs.modal', function (event) {
-//   var button = $(event.relatedTarget) // Button that triggered the modal
-//   var recipient = button.data('type') // Extract info from data-* attributes
-//   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-//   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-//   var modal = $(this)
-//   modal.find('.modal-subtitle').text('Бесплатная консультация по курсу "' + recipient + '"')
-//   modal.find('.modal-body input').val(recipient)
-// })
 $(document).ready(function () {
 
+    // $(".form-test").submit(function () {
+
+    //     var name = $('#username').val();
+    //     var phone = $('#phone').val();
+    //     var age = $('#age').val();
+
+    //     if ($('#username').val() != "") {
+
+    //       var url = "https://script.google.com/macros/s/AKfycbx7-naExuTtwQxsdC12b-XJVEbwq2Cpo4tUg9Nen72_H7ORh-w/exec";
+    //       $.post(url,
+    //       {
+    //         name: name,
+    //         phone: phone,
+    //         age: age
+    //       },
+    //       function(data, status){
+    //         alert("Data: " + data + "\nStatus: " + status);
+    //       });
+
+    //     } else {
+
+    //       return false;
+    //     }
+
+    // }
     $(".form-signin").submit(function () {
 
         var formID = $(this).attr('id');
@@ -75,7 +91,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html&text=' + postMessage,
+            url: 'https://script.google.com/macros/s/AKfycbx7-naExuTtwQxsdC12b-XJVEbwq2Cpo4tUg9Nen72_H7ORh-w/exec',
             data: formNm.serialize(),
             success: function (data) {
               // Вывод сообщения об успешной отправке
