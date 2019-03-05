@@ -482,10 +482,10 @@ strong,b{
 	font-weight:600;
 	}
 
-h1{font-size:28px;margin:18px 0;color:#383435;}
-h2{font-size:20px;margin:16px 0;color:#383435;}
+h1{font-size:22px;margin:18px 0;color:#383435;}
+h2{font-size:18px;margin:16px 0;color:#383435;}
 h3{font-size:30px;margin:10px 0;color:#383435;}
-h4{font-size:25px;margin:10px 0;color:#383435;}
+h4{font-size:22px;margin:10px 0;color:#383435;}
 /*h5{font-size:28px;font-weight:600;margin:15px 0;color:#384047;}*/
 h5{font-size:18px;margin:10px 0;color:#383435;}
 h6{font-size:16px;margin:10px 0;color:#383435;}
@@ -651,7 +651,7 @@ a:hover,a:focus{color:#5173bd;}
 
 .masthead{
 	position:relative;
-	padding:80px 15px;
+	padding: 24px 0px 32px;
 	color:#FFF;
 	text-align:center;
 	text-shadow:0 1px 0 rgba(0,0,0,.1);
