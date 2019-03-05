@@ -482,9 +482,9 @@ strong,b{
 	font-weight:600;
 	}
 
-h1{font-size:50px;line-height:60px;margin:25px 0;}
-h2{font-size:40px;font-weight:10;margin:15px 0;color:#383435;}
-h3{font-size:30px;margin:10px 0;font-weight:10;color:#383435;}
+h1{font-size:28px;margin:18px 0;color:#383435;}
+h2{font-size:20px;margin:16px 0;color:#383435;}
+h3{font-size:30px;margin:10px 0;color:#383435;}
 h4{font-size:25px;margin:10px 0;color:#383435;}
 /*h5{font-size:28px;font-weight:600;margin:15px 0;color:#384047;}*/
 h5{font-size:18px;margin:10px 0;color:#383435;}
@@ -510,7 +510,7 @@ a:hover,a:focus{color:#5173bd;}
     font-family: 'Manrope Light', 'Arial', sans-serif;
     height: auto;
     padding: 10px;
-    border: 0.5px solid #E9E9E9;
+    border: 1px solid #E9E9E9;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -560,13 +560,15 @@ a:hover,a:focus{color:#5173bd;}
   display: block;
   max-width: 100%;
   height: auto;
-  margin: auto;
+  margin: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .panel {
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.25);
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 16px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -1156,15 +1158,22 @@ to {
     background-color: rgba(214, 224, 226, 0.2);
     border-top-width: 0;
     border-bottom-width: 2px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+.card-img-top {
+    margin-top: 2px;
+    -webkit-border-radius: 16px 16px 0px 0px;
+    -moz-border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16px 0px 0px;
 }
 
 .card.people {
