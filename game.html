@@ -16,10 +16,28 @@
             left:0;
             bottom:0;
         }
+		#buttonRight{
+            position:absolute;
+			transition: .5s ease;
+			top: 30%;
+			left: 20%
+            
+        }
+		
+		#buttonLeft{
+            position:absolute;
+			transition: .5s ease;
+			top: 70%;
+		left: 20%
+            
+        }
     </style>
 </head>
 <body>
    <canvas id="pong" width="600" height="400"></canvas>
+   
    <script src="pong.js"></script>
+   <button id="buttonRight" onmousedown="downRight()" onmouseup = "upRight()">Right</button>
+   <button id="buttonLeft" onmousedown="downLeft()" onmouseup = "upLeft()">Left</button>
 </body>
 </html>

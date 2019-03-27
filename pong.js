@@ -31,7 +31,7 @@ const user = {
     x : 0, // left side of canvas
     y : (canvas.height - 100)/2, // -100 the height of paddle
     width : 10,
-    height : 80,
+    height : 100,
     score : 0,
     color : "WHITE"
 }
@@ -41,7 +41,7 @@ const com = {
     x : canvas.width - 10, // - width of paddle
     y : (canvas.height - 100)/2, // -100 the height of paddle
     width : 10,
-    height : 80,
+    height : 100,
     score : 0,
     color : "WHITE"
 }
@@ -77,6 +77,27 @@ function getMousePos(evt){
     let rect = canvas.getBoundingClientRect();
     
     user.y = evt.clientY - rect.top - user.height/2;
+}
+
+var boolRightPressed = false;
+var boolLeftPressed = false;
+
+function downRight() {
+  boolRightPressed = true;
+
+}
+function upRight() {
+  boolRightPressed = false;
+
+}
+
+function downLeft() {
+  boolLeftPressed = true;
+
+}
+function upLeft() {
+  boolLeftPressed = false;
+
 }
 
 // when COM or USER scores, we reset the ball
@@ -169,7 +190,7 @@ function update(){
         ball.velocityY = ball.speed * Math.sin(angleRad);
         
         // speed up the ball everytime a paddle hits it.
-        ball.speed += 0.2;
+        ball.speed += 0.1;
     }
 }
 
@@ -197,8 +218,18 @@ function render(){
     // draw the ball
     drawArc(ball.x, ball.y, ball.radius, ball.color);
 }
+
+
 function game(){
     update();
+	if(boolRightPressed)
+	{
+		user.y = user.y - 5;
+	}
+	if(boolLeftPressed)
+	{
+		user.y = user.y + 5;
+	}
     render();
 }
 // number of frames per second
