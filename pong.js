@@ -79,6 +79,13 @@ function getMousePos(evt){
     user.y = evt.clientY - rect.top - user.height/2;
 }
 
+
+
+function myFunction(event) {
+    let rect = canvas.getBoundingClientRect();
+  user.y = event.touches[0].clientY  - rect.top - user.height/2;
+}
+
 var boolRightPressed = false;
 var boolLeftPressed = false;
 
@@ -222,14 +229,14 @@ function render(){
 
 function game(){
     update();
-	if(boolRightPressed)
-	{
-		user.y = user.y - 5;
-	}
-	if(boolLeftPressed)
-	{
-		user.y = user.y + 5;
-	}
+    if(boolRightPressed)
+    {
+        user.y = user.y - 5;
+    }
+    if(boolLeftPressed)
+    {
+        user.y = user.y + 5;
+    }
     render();
 }
 // number of frames per second
