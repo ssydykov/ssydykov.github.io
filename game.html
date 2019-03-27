@@ -19,16 +19,19 @@
 		#buttonRight{
             position:absolute;
 			transition: .5s ease;
-			top: 30%;
-			left: 20%
-            
+			top: 80%;
+			left: 63%;
+            width: 100px;
+            height: 100px;
         }
 		
 		#buttonLeft{
             position:absolute;
 			transition: .5s ease;
-			top: 70%;
-		left: 20%
+			top: 80%;
+		    left: 30%;
+            width: 100px;
+            height: 100px;
             
         }
     </style>
@@ -37,7 +40,7 @@
    <canvas id="pong" width="600" height="400"></canvas>
    
    <script src="pong.js"></script>
-   <button id="buttonRight" onmousedown="downRight()" onmouseup = "upRight()">Right</button>
-   <button id="buttonLeft" onmousedown="downLeft()" onmouseup = "upLeft()">Left</button>
+   <button id="buttonRight" onmousedown="downRight()" onmouseup = "upRight()"></button>
+   <button id="buttonLeft" onmousedown="downLeft()" onmouseup = "upLeft()"></button>
 </body>
 </html>
