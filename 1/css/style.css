@@ -282,7 +282,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-2.jpg);
+    background: url(../img/home.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -325,7 +325,7 @@ a.active {
 
 #experience {
     padding: 100px 0;
-    background: #f3f3f3
+    background: #f3f3f3;
 }
 
 .experience-row {
@@ -449,6 +449,7 @@ a.active {
 ==================================================*/
 
 #projects {
+    background: #f3f3f3;
     padding: 100px 0;
 }
 
@@ -580,8 +581,8 @@ a.active {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    /*-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);*/
 }
 
 .portfolio-padding {
@@ -633,7 +634,7 @@ a.active {
 
 #contact {
     padding: 100px 0;
-    background: #f3f3f3
+    /*background: #f3f3f3;*/
 }
 
 #contact-form input,
