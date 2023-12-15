@@ -20,6 +20,69 @@
 
 /* CSS-only ribbon styles    */
 
+/*-------------------------------*/
+/*      Code snippet by          */
+/*      @maridlcrmn              */
+/*-------------------------------*/
+
+
+.quote {
+    color: rgba(0,0,0,.1);
+    text-align: left;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+/* Reposition the controls slightly */
+.carousel-control { 
+    padding-top: 225px;
+    color:#31708f;  
+} 
+.carousel-control:hover, 
+.carousel-control:focus { 
+    color:#31708f; 
+} 
+.carousel-control.left, .carousel-control.right { 
+    background-image: none; 
+}
+
+/*-------------------------------*/
+/*    Carousel Fade Transition   */
+/*-------------------------------*/
+
+#fade-quote-carousel.carousel {
+  padding-bottom: 60px;
+}
+#fade-quote-carousel.carousel .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-inner .active {
+  opacity: 1;
+  -webkit-transition-property: opacity;
+      -ms-transition-property: opacity;
+          transition-property: opacity;
+}
+#fade-quote-carousel.carousel .carousel-indicators {
+  bottom: 10px;
+}
+#fade-quote-carousel.carousel .carousel-indicators > li {
+  background-color: #F05565;
+  border: none;
+}
+#fade-quote-carousel blockquote {
+    text-align: center;
+    border: none;
+}
+#fade-quote-carousel .profile-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
 /*Custom font family*/
 
 @font-face {
@@ -58,7 +121,7 @@ src: url("css/fonts/Manrope/semibold.otf") format("opentype");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display:         flex;
+  display: flex;
 }
 
 .showcss{ display:block;}
@@ -489,7 +552,11 @@ h4{font-size:20px;margin:10px 0;color:#383435;}
 /*h5{font-size:28px;font-weight:600;margin:15px 0;color:#384047;}*/
 h5{font-size:18px;margin:10px 0;color:#383435;}
 h6{font-size:16px;margin:10px 0;color:#383435;}
-p{color:#383435;}
+p{
+    color:#383435;
+    margin-left: 16px;
+    margin-right: 16px;
+}
 
 a{color:#5173bd;}
 a:hover,a:focus{color:#5173bd;}
@@ -1210,6 +1277,11 @@ to {
 }
 .card.hovercard .cardheader-orange {
     background-color: #F2C35E;
+    /*background-size: cover;*/
+    height: 160px;
+}
+.card.hovercard .cardheader-green {
+    background-color: #3CE696;
     /*background-size: cover;*/
     height: 160px;
 }
