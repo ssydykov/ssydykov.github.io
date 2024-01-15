@@ -1267,7 +1267,7 @@ to {
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     border-radius: 16px;
-    background-color: rgba(214, 224, 226, 0.1);
+    background-color: #FBFCFC;
 }
 
 .card.hovercard .cardheader-blue {
